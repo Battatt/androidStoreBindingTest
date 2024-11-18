@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+    </data>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BaTiNa лавка"
+            android:textSize="24sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox
+                    android:id="@+id/CB1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:text="Гречка 1кг"
+                    />
+                <CheckBox
+                    android:id="@+id/CB2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:text="Куриная грудка 1.5кг"
+                    />
+                <CheckBox
+                    android:id="@+id/CB3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:text="Соль повареная 1 кг"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox
+                    android:id="@+id/CB4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:text="Творог 400г 10%"
+                    />
+                <CheckBox
+                    android:id="@+id/CB5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:text="Крупа манная 1 кг"
+                    />
+                <CheckBox
+                    android:id="@+id/CB6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:text="Молоко 1л 10%"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <RadioGroup
+            android:id="@+id/RG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="10sp"
+                android:text="Самовывоз"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Доставка курьером"
+                android:textSize="10sp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Доставка дроном"
+                android:textSize="10sp"/>
+        </RadioGroup>
+
+        <Switch
+            android:id="@+id/S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Напечатать чек?"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+        <EditText
+            android:id="@+id/ET"
+            android:layout_width="100dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Чаевые"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/BT"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:text="Сделать заказ"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+</layout>
